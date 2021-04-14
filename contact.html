@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Nutriție</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="plugin-frameworks/bootstrap.css" rel="stylesheet">
+	
+	<link href="fonts/ionicons.css" rel="stylesheet">
+	
+		
+	<link href="common/styles.css" rel="stylesheet">
+	
+	
+</head>
+<body>
+	
+	<header>
+		<div class="bottom-menu">
+			<div class="container">
+				
+				<a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+				
+				<center><ul class="main-menu" id="main-menu">
+					<li class="dropdown"><a href="#">Principalele</a></li>
+					<li class="dropdown"><a href="contact.html">Persoane de contact</a></li>
+					<li class="dropdown"><a href="terms.html">Termeni și condiții</a></li>
+					<li class="dropdown"><a href="policy.html">Politica de confidențialitate</a></li>
+				</ul></center>
+				<div class="clearfix"></div>
+			</div><!-- container -->
+		</div><!-- bottom-menu -->
+	</header>
+
+
+	<section class="pt-0 pb-20 mt-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-8">
+					<div class="p-30 mb-30 card-view">
+						<h4 class="p-title"><b>Lasă un comentariu</b></h4>
+						<form action="thanks.html" method="post" class="">
+							<div class="form-group">
+								<input type="text" class="form-control" id="contact-name" placeholder="Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="contact-lastname" placeholder="Lastname">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="contact-email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="contact-phone" placeholder="Phone number">
+							</div>
+							<div class="form-group">
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="The text of the comment"></textarea>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-1"><input type="checkbox" name="terms" value="check" required="" /></div>
+									<div class="col-md-10"><a href="policy.html" target="_blank">
+ Am citit și sunt de acord cu termenii acordului de utilizare
+ </a></div>
+								</div>
+							</div>
+							<button type="submit" class="btn-fill-primary plr-20">Trimite</button>
+						</form>
+					</div><!-- card-view -->
+				</div><!-- col-sm-12 -->
+				<div class="col-md-12 col-lg-4">
+
+					<div class="p-30 mb-30 card-view">
+						<ul class="list-contact list-li-mb-20">
+							<li><i class="ion-ios-home"></i>319, Rue de la Mairie, Neusatz, Grand Est, FR, 75016</li>
+							<li><a href="#"><i class="ion-ios-telephone"></i>+14779987993</a></li>
+							<li><a href="#"><i class="ion-email"></i>info.contact@<span class="server-name"></span></a></li>
+						</ul>
+					</div><!-- card-view -->
+				</div><!-- col-sm-12 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</section>
+
+
+	<footer class="bg-191 pos-relative color-ccc bg-primary">
+		<div class="bg-dark-primary ptb-15 text-left">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-sm-12">
+						<ul class="mtb-5 font-11 text-md-center text-right list-a-p-5">
+							<li><a href="index.html">Principalele</a></li>
+							<li><a href="contact.html">Persoane de contact</a></li>
+							<li><a href="terms.html">Termeni și condiții</a></li>
+							<li><a href="policy.html">Politica de confidențialitate</a></li>
+						</ul>
+					</div><!-- col-sm-3 -->
+				</div><!-- row -->
+				
+			</div><!-- container -->
+		</div><!-- container -->
+	</footer>
+	
+	<!-- SCIPTS -->
+	
+	<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+	
+	<script src="plugin-frameworks/tether.min.js"></script>
+	
+	<script src="plugin-frameworks/bootstrap.js"></script>
+	
+	<script src="common/scripts.js"></script>
+
+	<div class="cookie-banner">
+		<p>
+ Site-ul foloseste cookie-uri. Acestea ne permit să vă recunoaștem și a obține informații despre dvs. de utilizator experience.By continuând să navigați pe acest site, sunt de acord cu utilizarea cookie-urilor de către proprietarul site-ului, în conformitate cu <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">politica privind Cookie-urile</a>
+ </p>
+		<button class="close-cookie">×</button>
+	</div>
+	<script>
+		window.onload = function () {
+			$(&#39;.close-cookie&#39;).click(function () {
+				$(&#39;.cookie-banner&#39;).fadeOut();
+			})
+		}
+	</script>
+	<script>
+		let elems = document.querySelectorAll(&#39;.server-name&#39;);
+		elems.forEach((elem) =&gt; {
+			elem.innerHTML = window.location.hostname
+		})
+	</script>
+	
+</body>
+</html>
